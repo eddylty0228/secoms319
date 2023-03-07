@@ -1,22 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home Page</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <nav>
+        <ul>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="music.html">Music</a></li>
+            <li><a href="cars.html">Cars</a></li>
+            <li><a href="movies.html">Movies</a></li>
+        </ul>
+    </nav>
 </head>
-<nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="">Games</a></li>
-        <li><a href="">Music</a></li>
-        <li><a href="">Cars</a></li>
-        <li><a href="">Movies</a></li>
-    </ul>
-</nav>
+
 <body>
-    
+    <div id="grid-container">
+        <div class="grid-colum-1-2">
+            <h2 style="margin-left: 3%;">Games</h2>
+        </div>
+        <div class="grid-colum-3-4">
+            <div class="more-link">
+                <a href="games.html">More</a>
+            </div>
+        </div>
+        <div>
+            <a href="./Games/League-of-Legends.html">
+                <img src="./Images/League of Legends.jpg" alt="Leagur of Legends" class="image-link">
+            </a>
+            <p>League of Legends</p>
+        </div>
+        <div>
+            <a href="./Games/CSGO.html">
+                <img src="./Images/CSGO.jpg" alt="CSGO" class="image-link">
+            </a>
+        </div>
+    </div>
 </body>
+
+
 </html>
