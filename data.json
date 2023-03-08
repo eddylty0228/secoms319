@@ -2,27 +2,27 @@
     "Games":[
         {
             "name":"League of Legends",
-            "page":"./Games/League-of-Legends.html",
+            "page":"League-of-Legends.html",
             "img-url":"Images/League%20of%20Legends.jpg"
         },
         {
             "name":"Counter Strike Global Offensive",
-            "page":"./Games/CSGO.html",
+            "page":"Games/CSGO.html",
             "img-url":"Images/CSGO.jpg"
         },
         {
             "name":"Super Smash Bros Ultimate",
-            "page":"./Games/Super-Smash.html",
+            "page":"Games/Super-Smash.html",
             "img-url":"Images/Switch_SuperSmashBrosUltimate.jpg"
         },
         {
             "name":"Genshin-Impact",
-            "page":"./Games/Genshin-Impact.html",
+            "page":"Games/Genshin-Impact.html",
             "img-url":"Images/Genshin-Impact.jpg"
         },
         {
             "name":"Hades",
-            "page":"./Games/Hades.html",
+            "page":"Games/Hades.html",
             "img-url":"Images/Hades.jpg"
         }
     ],
