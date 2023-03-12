@@ -7,28 +7,98 @@
         },
         {
             "name":"Counter Strike Global Offensive",
-            "page":"Games/CSGO.html",
+            "page":"CSGO.html",
             "img-url":"Images/CSGO.jpg"
         },
         {
             "name":"Super Smash Bros Ultimate",
-            "page":"Games/Super-Smash.html",
+            "page":"Super-Smash.html",
             "img-url":"Images/Switch_SuperSmashBrosUltimate.jpg"
         },
         {
             "name":"Genshin-Impact",
-            "page":"Games/Genshin-Impact.html",
+            "page":"Genshin-Impact.html",
             "img-url":"Images/Genshin-Impact.jpg"
         },
         {
             "name":"Hades",
-            "page":"Games/Hades.html",
+            "page":"Hades.html",
             "img-url":"Images/Hades.jpg"
         }
     ],
     "Movies":[
-        {
+            {
+                    "name":"Avatar",
+                    "page":"avatar.html",
+                    "img-url":"Images/avartar.jpg"
+            },
+            
+            {
+                "name":"Avenger",
+                "page":"Avengers.html",
+                "img-url":"Images/avengers.jpg"
+            },
 
+            {
+                "name":"Fast And Furious",
+                "page":"fastandfurious.html",
+                "img-url":"Images/Fast And Furious.jpg"
+            },
+
+            {
+                "name":"Mission Impossible",
+                "page":"missionimpossible.html",
+                "img-url":"Images/Mission Impossible.jpg"
+            }
+    ],
+    "Music":[
+        {
+                "name":"Morgan Wallen",
+                "page":"morganwallen.html",
+                "img-url":"Images/morganwallen.jpeg"
+        },
+        
+        {
+            "name":"Drake",
+            "page":"drake.html",
+            "img-url":"Images/drake.webp"
+        },
+
+        {
+            "name":"The Weeknd",
+            "page":"theweeknd.html",
+            "img-url":"Images/theweekend.jpeg"
+        },
+
+        {
+            "name":"George Strait",
+            "page":"georgestrait.html",
+            "img-url":"Images/georgestrait.jpeg"
         }
-    ]
+    ],
+    "Cars":[
+    {
+            "name":"BMW",
+            "page":"bmw.html",
+            "img-url":"Images/bmw.png"
+    },
+    
+    {
+        "name":"Tesla",
+        "page":"tesla.html",
+        "img-url":"Images/tesla.png"
+    },
+
+    {
+        "name":"Ferrari",
+        "page":"ferrari.html",
+        "img-url":"Images/ferrari.png"
+    },
+
+    {
+        "name":"Jeep",
+        "page":"jeep.html",
+        "img-url":"Images/jeep2.png"
+    }
+]
 }
