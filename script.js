@@ -51,6 +51,7 @@ function checkRegex(){
 
 function generateTable() {
     let div = document.getElementById("grid");
+    div.innerHTML = "";
     const tbl = document.createElement("table");
     const tblBody = document.createElement("tbody");
 
@@ -65,7 +66,7 @@ function generateTable() {
 
 
     let rows = productNum.length == 6 ? 2 : 1; console.log(rows + " rows");
-    let cols = productNum.length == 6 ? 3 : productNum%3; console.log(cols + " cols");
+    let cols = 3;
   
     
     // creating all cells
@@ -75,13 +76,16 @@ function generateTable() {
       for (let j = 0; j < cols; j++) {
         //TO DO
         // 
-        // - Populate image
         // - Populate price
         // - Populate desc
         // - Populate name
+
         const cell = document.createElement("td");
-        const cellText = document.createElement("img");
-        cell.appendChild(cellText);
+        img = document.createElement("img")
+        img.src = products[productNum[(i*2)+j]-1].image;
+        //img.size = 25;
+
+        cell.appendChild(img);
         row.appendChild(cell);
         
       }
