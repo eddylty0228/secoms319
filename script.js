@@ -82,10 +82,16 @@ function generateTable() {
 
         const cell = document.createElement("td");
         img = document.createElement("img")
-        img.src = products[productNum[(i*2)+j]-1].image;
+        img.src = products[productNum[(i*3)+j]-1].image;
+        img.style.width = "100px";
+        img.style.height = "100px";
         //img.size = 25;
+        h1 = document.createElement("h1");
+        text = ([productNum[(i*3)+j]-1].name);
+        h1.innerHTML = text;
 
         cell.appendChild(img);
+        cell.appendChild(h1);
         row.appendChild(cell);
         
       }
