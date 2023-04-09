@@ -129,8 +129,8 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
       selected["air"] = 1;
     }
-    console.log("airfiyer:" + selected["air"]);
-    console.log(cartItemNum);
+    document.getElementById('air').innerHTML = ("Quantity: " + selected['air']);
+    //console.log("airfiyer:" + selected["air"]); testing logs
   }
 
   function subtractAir() {
@@ -145,7 +145,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (cartItemNum < 0) {
       cartItemNum = 0;
     }
-    console.log("airfiyer:" + selected["air"]);
+    document.getElementById('air').innerHTML = ("Quantity: " + selected['air']);
   }
 
   function addBlend() {
@@ -155,6 +155,7 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
       selected["blend"] = 1;
     }
+    document.getElementById('blend').innerHTML = ("Quantity: " + selected['blend']);
   }
 
   function subtractBlend() {
@@ -168,6 +169,8 @@ document.addEventListener("DOMContentLoaded", function () {
     if (cartItemNum < 0) {
       cartItemNum = 0;
     }
+    document.getElementById('blend').innerHTML = ("Quantity: " + selected['blend']);
+
   }
 
   function addJuicer() {
@@ -177,6 +180,8 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
       selected["juice"] = 1;
     }
+    document.getElementById('juice').innerHTML = ("Quantity: " + selected['juice']);
+
   }
 
   function subtractJuicer() {
@@ -190,6 +195,8 @@ document.addEventListener("DOMContentLoaded", function () {
     if (cartItemNum < 0) {
       cartItemNum = 0;
     }
+    document.getElementById('juice').innerHTML = ("Quantity: " + selected['juice']);
+
   }
 
   function addMug() {
@@ -199,6 +206,8 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
       selected["mug"] = 1;
     }
+    document.getElementById('mugq').innerHTML = ("Quantity: " + selected['mug']);
+
   }
 
   function subtractMug() {
@@ -212,6 +221,8 @@ document.addEventListener("DOMContentLoaded", function () {
     if (cartItemNum < 0) {
       cartItemNum = 0;
     }
+    document.getElementById('mugq').innerHTML = ("Quantity: " + selected['mug']);
+
   }
 
   function addCoffee() {
@@ -221,6 +232,8 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
       selected["coffee"] = 1;
     }
+    document.getElementById('coffee').innerHTML = ("Quantity: " + selected['coffee']);
+
   }
 
   function subtractCoffee() {
@@ -234,6 +247,8 @@ document.addEventListener("DOMContentLoaded", function () {
     if (cartItemNum < 0) {
       cartItemNum = 0;
     }
+    document.getElementById('coffee').innerHTML = ("Quantity: " + selected['coffee']);
+
   }
 
   function addToaster() {
@@ -243,6 +258,8 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
       selected["toast"] = 1;
     }
+    document.getElementById('toast').innerHTML = ("Quantity: " + selected['toast']);
+
   }
 
   function subtractToaster() {
@@ -256,6 +273,8 @@ document.addEventListener("DOMContentLoaded", function () {
     if (cartItemNum < 0) {
       cartItemNum = 0;
     }
+    document.getElementById('toast').innerHTML = ("Quantity: " + selected['toast']);
+
   }
 
   function loadOnside() {
