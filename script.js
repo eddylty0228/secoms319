@@ -1,27 +1,21 @@
 //Need different add/minus functions
-function add (e){
-    //document.getElementById(e).innerHTML = "Quantity: " + ++e; 
+function add(e) {
+  //document.getElementById(e).innerHTML = "Quantity: " + ++e;
 }
 
-
- function toggleDiv(divid)
- {
-   varon = divid + 'on';
-   varoff = divid + 'off';
-    console.log(varon);
-    console.log(varoff);
-   if(document.getElementById(varon).style.display == 'block')
-   {
-   document.getElementById(varon).style.display = 'none';
-   document.getElementById(varoff).style.display = 'block';
-   }
-  
-   else
-   {  
-   document.getElementById(varoff).style.display = 'none';
-   document.getElementById(varon).style.display = 'block'
-   }
-} 
+function toggleDiv(divid) {
+  varon = divid + "on";
+  varoff = divid + "off";
+  console.log(varon);
+  console.log(varoff);
+  if (document.getElementById(varon).style.display == "block") {
+    document.getElementById(varon).style.display = "none";
+    document.getElementById(varoff).style.display = "block";
+  } else {
+    document.getElementById(varoff).style.display = "none";
+    document.getElementById(varon).style.display = "block";
+  }
+}
 // function setupBrowse(search){
 
 // }
@@ -30,76 +24,75 @@ function add (e){
 
 // }
 
-function checkRegex(){
-    values = [];
-    sValue = document.getElementById('search').value.toLowerCase();
-    if(sValue.length == 0){
-        console.log("true");
-        values = [1,2,3,4,5,6];
-        return values;
-    } else{
-        products.forEach((e) =>
-        {
-            console.log(e);
-            if(e.name.toLowerCase().includes(sValue)){
-                 values[values.length] = e.id;
-
-
-            }
-            
-
-        });
-    }
-   // 
-   console.log("Values: " + values);
+function checkRegex() {
+  values = [];
+  sValue = document.getElementById("search").value.toLowerCase();
+  if (sValue.length == 0) {
+    console.log("true");
+    values = [1, 2, 3, 4, 5, 6];
     return values;
+  } else {
+    products.forEach((e) => {
+      console.log(e);
+      if (e.name.toLowerCase().includes(sValue)) {
+        values[values.length] = e.id;
+      }
+    });
+  }
+  //
+  console.log("Values: " + values);
+  return values;
 }
 
-function searchBar(){
-    ids = ["mug","airfryer","toaster","juicer","blender","coffeemaker"];
-    let divOn =[];
-    let divOff =[];
+function searchBar() {
+  ids = ["mug", "airfryer", "toaster", "juicer", "blender", "coffeemaker"];
+  let divOn = [];
+  let divOff = [];
 
+  sValue = document.getElementById("search").value.toLowerCase();
 
-    sValue = document.getElementById('search').value.toLowerCase();
+  ids.forEach((e) => {
+    if (sValue == "") {
+      divOn = [
+        "mug",
+        "airfryer",
+        "toaster",
+        "juicer",
+        "blender",
+        "coffeemaker",
+      ];
+      divOff = [];
+    }
+    if (e.toLowerCase().includes(sValue)) {
+      divOn.push(e);
+    } else {
+      divOff.push(e);
+    }
+  });
+  console.log("Div on = " + divOn + "\nDiv off = " + divOff);
 
-    ids.forEach((e) =>{
-        if(sValue == ""){
-            divOn = ["mug","airfryer","toaster","juicer","blender","coffeemaker"];
-            divOff =[];
-        }
-        if(e.toLowerCase().includes(sValue)){
-            divOn.push(e);
-        } else{
-            divOff.push(e)
-        }
-    });
-    console.log("Div on = " + divOn + "\nDiv off = " + divOff);
+  divOn.forEach((e) => {
+    document.getElementById(e).style.display = "block";
+  });
+  divOff.forEach((e) => {
+    document.getElementById(e).style.display = "none";
+  });
 
-    divOn.forEach((e) =>{
-        document.getElementById(e).style.display = 'block';
-    });
-    divOff.forEach((e) =>{
-        document.getElementById(e).style.display = 'none';
-    });
+  // if(sValue.length == 0){
+  //     console.log("true");
+  //     values = [1,2,3,4,5,6];
+  //     return values;
+  // } else{
+  //     products.forEach((e) =>
+  //     {
+  //         console.log(e);
+  //         if(e.name.toLowerCase().includes(sValue)){
+  //              values[values.length] = e.id;
 
-    // if(sValue.length == 0){
-    //     console.log("true");
-    //     values = [1,2,3,4,5,6];
-    //     return values;
-    // } else{
-    //     products.forEach((e) =>
-    //     {
-    //         console.log(e);
-    //         if(e.name.toLowerCase().includes(sValue)){
-    //              values[values.length] = e.id;
+  //         }
 
-
-    //         }
-            
-
-    //     });
-   // }
+  //     });
+  // }
 }
 
 // function generateTable() {
@@ -116,27 +109,24 @@ function searchBar(){
 //         return 0; //leave if no products found
 //     }
 
-
-
 //     let rows = productNum.length == 6 ? 2 : 1; console.log(rows + " rows");
 //     let cols = 3;
-  
-    
+
 //     // creating all cells
 //     for (let i = 0; i < rows; i++) {
 //       const row = document.createElement("tr");
-  
+
 //       for (let j = 0; j < cols; j++) {
 
 //         //TO DO
-//         // 
+//         //
 //         // - Populate price
 //         // - Populate desc
 //         // - Populate name
 
 //         const cell = document.createElement("td");
 //         img = document.createElement("img");
-//         console.log("I : " + i + "\n J: " + j + "\n"); 
+//         console.log("I : " + i + "\n J: " + j + "\n");
 //         img.src = products[productNum[(i*3)+j]-1].image;
 //         img.style.width = "100px";
 //         img.style.height = "100px";
@@ -150,7 +140,7 @@ function searchBar(){
 //         cell.appendChild(h1);
 //         cell.appendChild(p);
 //         row.appendChild(cell);
-        
+
 //       }
 //       tblBody.appendChild(row);
 //     }
@@ -158,58 +148,64 @@ function searchBar(){
 //     div.appendChild(tbl);
 //     tbl.setAttribute("border", "2");
 // }
-  
 
 var values = [];
 const products = [
-    {
-        "id":1,
-        "name":"Mug",
-        "image":"images/mug.jpg",
-        "desc":"..",
-        "price":10
-
-    },
-    {
-        "id":2,
-        "name":"Coffee Maker",
-        "image":"images/coffeemaker.jpg",
-        "desc":"tbd",
-        "price":75
-
-    },
-    {
-        "id":3,
-        "name":"Blender",
-        "image":"images/blender.webp",
-        "desc":"tbd",
-        "price":60
-
-    },
-    {
-        "id":4,
-        "name":"Juicer",
-        "image":"images/juicer.jpg",
-        "desc":"tbd",
-        "price":60
-
-    },
-    {
-        "id":5,
-        "name":"Air Fryer",
-        "image":"images/airfryer.webp",
-        "desc":"tbd",
-        "price":50
-
-    },
-    {
-        "id":6,
-        "name":"Toaster",
-        "image":"images/toaster.jpg",
-        "desc":"tbd",
-        "price":30
-
-    }
-    
+  {
+    id: 1,
+    name: "Mug",
+    image: "images/mug.jpg",
+    desc: "..",
+    price: 10,
+  },
+  {
+    id: 2,
+    name: "Coffee Maker",
+    image: "images/coffeemaker.jpg",
+    desc: "tbd",
+    price: 75,
+  },
+  {
+    id: 3,
+    name: "Blender",
+    image: "images/blender.webp",
+    desc: "tbd",
+    price: 60,
+  },
+  {
+    id: 4,
+    name: "Juicer",
+    image: "images/juicer.jpg",
+    desc: "tbd",
+    price: 60,
+  },
+  {
+    id: 5,
+    name: "Air Fryer",
+    image: "images/airfryer.webp",
+    desc: "tbd",
+    price: 50,
+  },
+  {
+    id: 6,
+    name: "Toaster",
+    image: "images/toaster.jpg",
+    desc: "tbd",
+    price: 30,
+  },
 ];
 
+function selected(){
+    let selected=[];
+}
+function addItem(data) {
+  for (let element of data["Games"]) {
+    let div = document.createElement("div");
+    div.innerHTML = `
+            <a href="${element["page"]}" class="image-link-container">
+                    <img src="${element["img-url"]}" alt="${element["name"]}" class="image-link">
+            </a>
+            <p class="subtitle">${element["name"]}</p>`;
+    document.getElementById("grid-container").appendChild(div);
+  }
+};
