@@ -195,17 +195,139 @@ const products = [
   },
 ];
 
-function selected(){
-    let selected=[];
-}
-function addItem(data) {
-  for (let element of data["Games"]) {
-    let div = document.createElement("div");
-    div.innerHTML = `
-            <a href="${element["page"]}" class="image-link-container">
-                    <img src="${element["img-url"]}" alt="${element["name"]}" class="image-link">
-            </a>
-            <p class="subtitle">${element["name"]}</p>`;
-    document.getElementById("grid-container").appendChild(div);
+export var selected = {};
+export var cartItemNum = 0
+const addAirBtn = document.getElementById("addAir");
+addAirBtn.addEventListener("click", addAir);
+function addAir() {
+  if ("air" in selected) {
+    selected["air"] += 1;
+    cartItemNum += 1
+  } else {
+    selected["air"] = 0;
   }
-};
+}
+
+const minusAirBtn = document.getElementById("minusAir");
+minusAirBtn.addEventListener("click", subtractAir);
+
+function subtractAir() {
+  if ("air" in selected) {
+    selected["air"] -= 1;
+    cartItemNum -= 1;
+  } else {
+    selected["air"] = 0;
+  }
+}
+const addBlendBtn = document.getElementById("addBlend");
+addBlendBtn.addEventListener("click", addBlend);
+
+function addBlend() {
+  if ("blend" in selected) {
+    selected["blend"] += 1;
+    cartItemNum += 1
+  } else {
+    selected["blend"] = 0;
+  }
+}
+const minusBlendBtn = document.getElementById("minusBlend");
+minusBlendBtn.addEventListener("click", subtractBlend);
+
+function subtractBlend() {
+  if ("blend" in selected) {
+    selected["blend"] -= 1;
+    cartItemNum -= 1;
+  } else {
+    selected["blend"] = 0;
+  }
+}
+const addJuicerBtn = document.getElementById("addJuicer");
+addJuicerBtn.addEventListener("click", addJuicer);
+
+function addJuicer() {
+  if ("juice" in selected) {
+    selected["juice"] += 1;
+    cartItemNum += 1;
+  } else {
+    selected["juice"] = 0;
+  }
+}
+const minusJuicerBtn = document.getElementById("minusJuicer");
+minusJuicerBtn.addEventListener("click", subtractJuicer);
+
+function subtractJuicer() {
+  if ("juice" in selected) {
+    selected["juice"] -= 1;
+    cartItemNum -= 1
+  } else {
+    selected["juice"] = 0;
+  }
+}
+const addMugBtn = document.getElementById("addMug");
+addMugBtn.addEventListener("click", addMug);
+
+function addMug() {
+  if ("mug" in selected) {
+    selected["mug"] += 1;
+    cartItemNum += 1
+  } else {
+    selected["mug"] = 0;
+  }
+}
+const minusMugBtn = document.getElementById("minusMug");
+minusMugBtn.addEventListener("click", subtractMug);
+
+function subtractMug() {
+  if ("mug" in selected) {
+    selected["mug"] -= 1;
+    cartItemNum -= 1
+  } else {
+    selected["mug"] = 0;
+  }
+}
+const addCoffeeBtn = document.getElementById("addCoffee");
+addCoffeeBtn.addEventListener("click", addCoffee);
+
+function addCoffee() {
+  if ("coffee" in selected) {
+    selected["coffee"] += 1;
+    cartItemNum += 1
+  } else {
+    selected["coffee"] = 0;
+  }
+}
+const minusCoffeeBtn = document.getElementById("minusCoffee");
+minusCoffeeBtn.addEventListener("click", subtractCoffee);
+
+function subtractCoffee() {
+  if ("coffee" in selected) {
+    selected["coffee"] -= 1;
+    cartItemNum -= 1
+  } else {
+    selected["coffee"] = 0;
+  }
+}
+const addToasterBtn = document.getElementById("addToaster");
+addToasterBtn.addEventListener("click", addToaster);
+
+function addToaster() {
+  if ("toast" in selected) {
+    selected["toast"] += 1;
+    cartItemNum +=1
+  } else {
+    selected["toast"] = 0;
+  }
+}
+const minusToasterBtn = document.getElementById("minusToaster");
+minusToasterBtn.addEventListener("click", subtractToaster);
+
+function subtractToaster() {
+  if ("toast" in selected) {
+    selected["toast"] -= 1;
+    cartItemNum -= 1
+  } else {
+    selected["toast"] = 0;
+  }
+}
+
+
