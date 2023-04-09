@@ -3,7 +3,7 @@
         "id":1,
         "name":"Mug",
         "image":"images/mug.jpg",
-        "desc":"..",
+        "desc":"A cup used for drinking hot beverages such as coffee or tea.",
         "price":10
 
     },
@@ -11,7 +11,7 @@
         "id":2,
         "name":"Coffee Maker",
         "image":"images/coffeemaker.jpg",
-        "desc":"tbd",
+        "desc":"A kitchen appliance used to brew coffee.",
         "price":75
 
     },
@@ -19,7 +19,7 @@
         "id":3,
         "name":"Blender",
         "image":"images/blender.webp",
-        "desc":"tbd",
+        "desc":"A kitchen appliance used to blend ingredients or puree food.",
         "price":60
 
     },
@@ -27,7 +27,7 @@
         "id":4,
         "name":"Juicer",
         "image":"images/juicer.jpg",
-        "desc":"tbd",
+        "desc":"A kitchen appliance used to extract juice from fruits and vegetables.",
         "price":60
 
     },
@@ -35,7 +35,7 @@
         "id":5,
         "name":"Air Fryer",
         "image":"images/airfryer.webp",
-        "desc":"tbd",
+        "desc":"A kitchen appliance for frying food using hot air.",
         "price":50
 
     },
@@ -43,7 +43,7 @@
         "id":6,
         "name":"Toaster",
         "image":"images/toaster.jpg",
-        "desc":"tbd",
+        "desc":"A toaster is a small kitchen appliance used to toast slices of bread, bagels, or other baked goods.",
         "price":30
 
     }
