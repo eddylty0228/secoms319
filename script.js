@@ -195,7 +195,7 @@ const products = [
   },
 ];
 
-export var selected = {"toast":1};
+export var selected = {};
 export var cartItemNum = 0
 
 try{
