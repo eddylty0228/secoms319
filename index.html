@@ -1,22 +1,151 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <style>
+      img{
+        width: 200px;
+        height: 200px;
+      }
+      body{
+        border: 10px;
+        border-color: black;
+        border-width: 10px;
+        color: black;
+        padding: 10px;
+        position: fixed;
+      }
+      td{
+        column-span: 3;
+      }
+
+      h2{
+        size: 10px;
+      }
+    </style>
     <title>Shop</title>
     <script src="script.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
   </head>
   <body>
+   
     
     <div id ="browseon" style="display: block">
         <div id ="topBar"><button onmouseup="toggleDiv('browse');"> Cart Checkout </button>
             <form class="form">
-                <input id="search" type="text" class="input" placeholder="search..." onkeyup="generateTable();"/>
+                <input id="search" type="text" class="input" placeholder="search..." onkeyup="searchBar();"/>
                 <button id="clear" class="clear-results">clear</button>
             </div>
+          </form>
+
             <div id = "grid">
 
             </div>
-        </form>
+        
+
+        <!-- <table>
+          <div>
+            <tr>
+              <td id = "airfryer">
+                  <img src="images/airfryer.webp" alt="airfryer">
+                  <h1>Air Fryer $50</h1>
+                  <p>tbd</p>
+                  <button id="add">+</button>
+                  <button id="minus">-</button>
+              </td>
+              <td id="blender">
+                <img src="images/blender.webp" alt="blender">
+                  <h1>Blender $60</h1>
+                  <p>tbd</p>
+                  <button id="add">+</button>
+                  <button id="minus">-</button>
+              </td>
+              <td id="juicer">
+                <img src="images/juicer.jpg" alt="juicer">
+                  <h1>Juicer $60</h1>
+                  <p>tbd</p>
+                  <button id="add">+</button>
+                  <button id="minus">-</button>
+              </td>
+            </tr>
+            <tr>
+              <td id="mug">
+                <img src="images/mug.jpg" alt="mug">
+                  <h1>Mug $1  0</h1>
+                  <p>tbd</p>
+                  <button id="add">+</button>
+                  <button id="minus">-</button>
+              </td>
+              <td id="coffeemaker">
+                <img src="images/coffeemaker.jpg" alt="coffeemaker">
+                  <h1>Coffee Maker $75</h1>
+                  <p>tbd</p>
+                  <button id="add">+</button>
+                  <button id="minus">-</button>
+              </td>
+              <td id="toaster">
+                <img src="images/toaster.jpg" alt="toaster">
+                  <h1>Toaster $30</h1>
+                  <p>tbd</p>
+                  <button id="add">+</button>
+                  <button id="minus">-</button>
+              </td>
+            </tr>
+          </div>
+        </table> -->
+
+        <div class="container">
+          <div class="row">
+              <div class="col" id = "airfryer">
+                  <img src="images/airfryer.webp" alt="airfryer">
+                  <h2>Air Fryer $50</h2>
+                  <p>tbd</p>
+                  <label id="af">Quantity: 0</label>
+                  <button id="add" onclick="addAir();">+</button>
+                  <button id="minus">-</button>
+                  
+              </div>
+              <div class="col" id="blender">
+                <img src="images/blender.webp" alt="blender">
+                  <h2>Blender $60</h2>
+                  <p>tbd</p>
+                  <button id="add">+</button>
+                  <button id="minus">-</button>
+              </div>
+              <div class="col" id="juicer">
+                <img src="images/juicer.jpg" alt="juicer">
+                  <h2>Juicer $60</h2>
+                  <p>tbd</p>
+                  <button id="add">+</button>
+                  <button id="minus">-</button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col" id="mug">
+                <img src="images/mug.jpg" alt="mug">
+                  <h2>Mug $10</h2>
+                  <p>tbd</p>
+                  <button id="add">+</button>
+                  <button id="minus">-</button>
+              </div>
+              <div class="col" id="coffeemaker">
+                <img src="images/coffeemaker.jpg" alt="coffeemaker">
+                  <h2>Coffee Maker $75</h2>
+                  <p>tbd</p>
+                  <button id="add">+</button>
+                  <button id="minus">-</button>
+              </div>
+              <div class="col" id="toaster">
+                <img src="images/toaster.jpg" alt="toaster">
+                  <h2>Toaster $30</h2>
+                  <p>tbd</p>
+                  <button id="add">+</button>
+                  <button id="minus">-</button>
+              </div>
+            </div>
+          </div>
+          </div>
+
+
         
         
 
@@ -27,6 +156,10 @@
             <p>cart</p>
         </div>
     </div>
+
+
+    
+
   </body>
   <footer>Team 74 · Matthew Gudenkauf · Tianyi Luo</footer>
 </html>
