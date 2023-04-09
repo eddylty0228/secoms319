@@ -10,42 +10,43 @@ fetch("data.json")
   .catch(function (err) {
     console.log("error:" + err);
   });
-function displayOnSide(data) {
+function displayOnSide(data) {    
   for (let key in selected) {
-    if(key ="air"){
-        addListItem(0, key);
+    if(key =="air"){
+        addListItem(4, key, data);
     }
-    if(key="blend"){
-        addListItem(1,key);
+    if(key=="blend"){
+        addListItem(2,key,data);
     }
-    if(key="juice"){
-        addListItem(2,key)
+    if(key=="juice"){
+        addListItem(3,key,data)
     }
-    if(key ="mug"){
-        addListItem(3, key);
+    if(key =="mug"){
+        addListItem(0, key,data);
     }
-    if(key="coffee"){
-        addListItem(4,key);
+    if(key=="coffee"){
+        addListItem(1,key,data);
     }
-    if(key="toast"){
-        addListItem(5,key)
+    if(key=="toast"){
+        addListItem(5,key,data);
     }
-    
-  }
+
 }
+}
+
 const cartNum = document.getElementById("cartNum");
 cartNum.textContent = cartItemNum.toString();
-function addListItem(position, key) {
-  let li = document.createElement("li");
-  li.className = "list-group-item d-flex justify-content-between lh-sm";
-  div.innerHTML = `
+function addListItem(position, key, data) {
+    let li = document.createElement("li");
+    li.className = "list-group-item d-flex justify-content-between lh-sm";
+    li.innerHTML = `
       <div>
       <h6 class="my-0">${data[position].name}</h6>
       <small class="text-muted">${data[position]}</small>
       </div>
-      <span class="text-muted">"$"${
-        parseInt(data[position].price) * data[key]
+      <span class="text-muted">$${
+        parseInt(data[position].price) * selected[key]
       }</span>
       `;
-  document.getElementById("selected_items").appendChild(li);
+      document.getElementById("selected_items").appendChild(li);
 }
