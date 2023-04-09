@@ -42,7 +42,7 @@ const products = [
     price: 30,
   },
 ];
-
+//
 //export var selected = {};
 //export var cartItemNum = 0
 
