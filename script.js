@@ -195,10 +195,37 @@ const products = [
   },
 ];
 
-export var selected = {};
+export var selected = {"toast":1};
 export var cartItemNum = 0
+
+try{
 const addAirBtn = document.getElementById("addAir");
 addAirBtn.addEventListener("click", addAir);
+const minusAirBtn = document.getElementById("minusAir");
+minusAirBtn.addEventListener("click", subtractAir);
+const addBlendBtn = document.getElementById("addBlend");
+addBlendBtn.addEventListener("click", addBlend);
+const minusBlendBtn = document.getElementById("minusBlend");
+minusBlendBtn.addEventListener("click", subtractBlend);
+const addJuicerBtn = document.getElementById("addJuicer");
+addJuicerBtn.addEventListener("click", addJuicer);
+const minusJuicerBtn = document.getElementById("minusJuicer");
+minusJuicerBtn.addEventListener("click", subtractJuicer);
+const addMugBtn = document.getElementById("addMug");
+addMugBtn.addEventListener("click", addMug);
+const minusMugBtn = document.getElementById("minusMug");
+minusMugBtn.addEventListener("click", subtractMug);
+const addCoffeeBtn = document.getElementById("addCoffee");
+addCoffeeBtn.addEventListener("click", addCoffee);
+const minusCoffeeBtn = document.getElementById("minusCoffee");
+minusCoffeeBtn.addEventListener("click", subtractCoffee);
+const addToasterBtn = document.getElementById("addToaster");
+addToasterBtn.addEventListener("click", addToaster);
+const minusToasterBtn = document.getElementById("minusToaster");
+minusToasterBtn.addEventListener("click", subtractToaster);
+}catch{
+
+}
 function addAir() {
   if ("air" in selected) {
     selected["air"] += 1;
@@ -208,8 +235,7 @@ function addAir() {
   }
 }
 
-const minusAirBtn = document.getElementById("minusAir");
-minusAirBtn.addEventListener("click", subtractAir);
+
 
 function subtractAir() {
   if ("air" in selected) {
@@ -219,8 +245,7 @@ function subtractAir() {
     selected["air"] = 0;
   }
 }
-const addBlendBtn = document.getElementById("addBlend");
-addBlendBtn.addEventListener("click", addBlend);
+
 
 function addBlend() {
   if ("blend" in selected) {
@@ -230,8 +255,7 @@ function addBlend() {
     selected["blend"] = 0;
   }
 }
-const minusBlendBtn = document.getElementById("minusBlend");
-minusBlendBtn.addEventListener("click", subtractBlend);
+
 
 function subtractBlend() {
   if ("blend" in selected) {
@@ -241,8 +265,7 @@ function subtractBlend() {
     selected["blend"] = 0;
   }
 }
-const addJuicerBtn = document.getElementById("addJuicer");
-addJuicerBtn.addEventListener("click", addJuicer);
+
 
 function addJuicer() {
   if ("juice" in selected) {
@@ -252,8 +275,7 @@ function addJuicer() {
     selected["juice"] = 0;
   }
 }
-const minusJuicerBtn = document.getElementById("minusJuicer");
-minusJuicerBtn.addEventListener("click", subtractJuicer);
+
 
 function subtractJuicer() {
   if ("juice" in selected) {
@@ -263,8 +285,7 @@ function subtractJuicer() {
     selected["juice"] = 0;
   }
 }
-const addMugBtn = document.getElementById("addMug");
-addMugBtn.addEventListener("click", addMug);
+
 
 function addMug() {
   if ("mug" in selected) {
@@ -274,8 +295,7 @@ function addMug() {
     selected["mug"] = 0;
   }
 }
-const minusMugBtn = document.getElementById("minusMug");
-minusMugBtn.addEventListener("click", subtractMug);
+
 
 function subtractMug() {
   if ("mug" in selected) {
@@ -285,8 +305,7 @@ function subtractMug() {
     selected["mug"] = 0;
   }
 }
-const addCoffeeBtn = document.getElementById("addCoffee");
-addCoffeeBtn.addEventListener("click", addCoffee);
+
 
 function addCoffee() {
   if ("coffee" in selected) {
@@ -296,8 +315,6 @@ function addCoffee() {
     selected["coffee"] = 0;
   }
 }
-const minusCoffeeBtn = document.getElementById("minusCoffee");
-minusCoffeeBtn.addEventListener("click", subtractCoffee);
 
 function subtractCoffee() {
   if ("coffee" in selected) {
@@ -307,8 +324,6 @@ function subtractCoffee() {
     selected["coffee"] = 0;
   }
 }
-const addToasterBtn = document.getElementById("addToaster");
-addToasterBtn.addEventListener("click", addToaster);
 
 function addToaster() {
   if ("toast" in selected) {
@@ -318,8 +333,7 @@ function addToaster() {
     selected["toast"] = 0;
   }
 }
-const minusToasterBtn = document.getElementById("minusToaster");
-minusToasterBtn.addEventListener("click", subtractToaster);
+
 
 function subtractToaster() {
   if ("toast" in selected) {
@@ -329,5 +343,6 @@ function subtractToaster() {
     selected["toast"] = 0;
   }
 }
+
 
 
