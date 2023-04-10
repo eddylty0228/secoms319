@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
     ) {
       alert("Please complete the form");
     } else {
-      alert("Order is complet. Thank you for shopping.");
+      alert("Order is complete. Thank you for shopping.");
     }
   });
   const checkout = document.getElementById("CheckoutBtn");
