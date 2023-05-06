@@ -65,18 +65,18 @@ function App() {
     const row = <Row key={`row-${i}`}>{rowItems}</Row>;
     rows.push(row);
   }
-  const showOneItem = oneProduct.map((el) => (
-    <Col key={el._id}>
-      <Card style={{ width: "16rem" }}>
-        <Card.Img variant="top" src={el.image} style={{ height: "20rem" }} />
-        <Card.Body>
-          <Card.Title>{el.title}</Card.Title>
-          <Card.Text>{el.category}</Card.Text>
-          <Card.Text>Rate:{el.rate}</Card.Text>
-        </Card.Body>
-      </Card>
-    </Col>
-  ));
+  // const showOneItem = oneProduct.map((el) => (
+  //   <Col key={el._id}>
+  //     <Card style={{ width: "16rem" }}>
+  //       <Card.Img variant="top" src={el.image} style={{ height: "20rem" }} />
+  //       <Card.Body>
+  //         <Card.Title>{el.title}</Card.Title>
+  //         <Card.Text>{el.category}</Card.Text>
+  //         <Card.Text>Rate:{el.rate}</Card.Text>
+  //       </Card.Body>
+  //     </Card>
+  //   </Col>
+  // ));
   const showGames = gameProduct.map((el) => (
     <Row>
       <Col sm={12} md={4}>
@@ -196,7 +196,7 @@ function App() {
     }
   }
   function getGameProducts() {
-    fetch("http://localhost:8080/game")
+    fetch("http://localhost:8080/games")
     .then((response) => response.json())
     .then((data) => {
       console.log("Show games");
@@ -213,7 +213,7 @@ function App() {
     setCollectionView(false);
   }
   function getMovieProducts() {
-    fetch("http://localhost:8080/movie")
+    fetch("http://localhost:8080/movies")
     .then((response) => response.json())
     .then((data) => {
       console.log("Show movies");
@@ -247,7 +247,7 @@ function App() {
     setCollectionView(false);
   }
   function getCarProducts() {
-    fetch("http://localhost:8080/car")
+    fetch("http://localhost:8080/cars")
     .then((response) => response.json())
     .then((data) => {
       console.log("Show cars");

@@ -30,20 +30,20 @@ app.get("/", async (req, resp) => {
     });
 
     //id data
-    app.get("/:id", async (req, resp) => {
-        const i = req.params.id
-        const query = { id: i };
-        const oneProduct = await Product.findOne(query);
-        console.log(oneProduct);
-        resp.send(oneProduct);
-        });
+    // app.get("/:id", async (req, resp) => {
+    //     const i = req.params.id
+    //     const query = { id: i };
+    //     const oneProduct = await Product.findOne(query);
+    //     console.log(oneProduct);
+    //     resp.send(oneProduct);
+    //     });
 
     //category data backend // not working with id data. if you need to use uncomment and comment out id data
-// app.get("/:category", async (req, resp) => {
-//     const cat = req.params.category;
-//     const query = { category: cat };
-//     const categories = await Product.find(query);
-//     console.log(categories);
-//     resp.send(categories);
-//     });
+app.get("/:category", async (req, resp) => {
+    const cat = req.params.category;
+    const query = { category: cat };
+    const categories = await Product.find(query);
+    console.log(categories);
+    resp.send(categories);
+    });
 
