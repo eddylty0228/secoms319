@@ -23,7 +23,7 @@ function App() {
     title: "",
     description: "",
     category: "",
-    image: "http://127.0.0.1:4000/images/",
+    image: "http://127.0.0.1:8080/images/",
     rate: 0.0
   });
   useEffect(() => {
@@ -164,7 +164,7 @@ function App() {
   ));
 
   function getAllProducts() {
-    fetch("http://localhost:4000/")
+    fetch("http://localhost:8080/")
       .then((response) => response.json())
       .then((data) => {
         console.log("Show Catalog of Products :");
@@ -181,7 +181,7 @@ function App() {
   function getOneProduct(id) {
     console.log(id);
     if (id >= 1 && id <= 20) {
-      fetch("http://localhost:4000/" + id)
+      fetch("http://localhost:8080/" + id)
         .then((response) => response.json())
         .then((data) => {
           console.log("Show one product :", id);
@@ -196,7 +196,7 @@ function App() {
     }
   }
   function getGameProducts() {
-    fetch("http://localhost:4000/game")
+    fetch("http://localhost:8080/game")
     .then((response) => response.json())
     .then((data) => {
       console.log("Show games");
@@ -213,7 +213,7 @@ function App() {
     setCollectionView(false);
   }
   function getMovieProducts() {
-    fetch("http://localhost:4000/movie")
+    fetch("http://localhost:8080/movie")
     .then((response) => response.json())
     .then((data) => {
       console.log("Show movies");
@@ -230,7 +230,7 @@ function App() {
     setCollectionView(false);
   }
   function getMusicProducts() {
-    fetch("http://localhost:4000/music")
+    fetch("http://localhost:8080/music")
     .then((response) => response.json())
     .then((data) => {
       console.log("Show music");
@@ -247,7 +247,7 @@ function App() {
     setCollectionView(false);
   }
   function getCarProducts() {
-    fetch("http://localhost:4000/car")
+    fetch("http://localhost:8080/car")
     .then((response) => response.json())
     .then((data) => {
       console.log("Show cars");
@@ -264,7 +264,7 @@ function App() {
     setCollectionView(false);
   }
   function getCollectionProducts() {
-    fetch("http://localhost:4000/collection")
+    fetch("http://localhost:8080/collection")
     .then((response) => response.json())
     .then((data) => {
       console.log("Show collection");
