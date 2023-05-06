@@ -1,15 +1,16 @@
 const mongoose = require('mongoose')
 const ReactFormDataSchema = new mongoose.Schema({
 _id: {type: Number},
-title: {type: String},
+id: {type: Number},
+name: {type: String},
 description: {type: String},
 category: {type: String},
 image: {type: String},
-rate : {type: Number},
+// rate : {type: Number}, add later
 
 } ,
 //todo
-{ collection: "" }
+{ collection: "final_data" }
 )
 const Product = mongoose.model('Product', ReactFormDataSchema)
 module.exports = Product
