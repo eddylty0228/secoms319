@@ -18,7 +18,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   const [product, setProduct] = useState([]);
-  const [oneProduct, setOneProduct] = useState();
+  const [oneProduct, setOneProduct] = useState({});
   const [homeView, setHomeView] = useState(true);
   const [gameView, setGameView] = useState(false);
   const [musicView, setMusicView] = useState(false);
@@ -272,7 +272,7 @@ function App() {
     setOneProduct()
   }
   function getGameProducts() {
-    fetch("http://localhost:8080/games")
+    fetch("http://localhost:8080/category/games")
       .then((response) => response.json())
       .then((data) => {
         console.log("Show games");
@@ -288,7 +288,7 @@ function App() {
     setCollectionView(false);
   }
   function getMovieProducts() {
-    fetch("http://localhost:8080/movies")
+    fetch("http://localhost:8080/category/movies")
       .then((response) => response.json())
       .then((data) => {
         console.log("Show movies");
@@ -303,7 +303,7 @@ function App() {
     setCollectionView(false);
   }
   function getMusicProducts() {
-    fetch("http://localhost:8080/music")
+    fetch("http://localhost:8080/category/music")
       .then((response) => response.json())
       .then((data) => {
         console.log("Show music");
@@ -318,7 +318,7 @@ function App() {
     setCollectionView(false);
   }
   function getCarProducts() {
-    fetch("http://localhost:8080/cars")
+    fetch("http://localhost:8080/category/cars")
       .then((response) => response.json())
       .then((data) => {
         console.log("Show cars");
@@ -333,7 +333,7 @@ function App() {
     setCollectionView(false);
   }
   function getCollectionProducts() {
-    fetch("http://localhost:8080/collection")
+    fetch("http://localhost:8080/category/collection")
       .then((response) => response.json())
       .then((data) => {
         console.log("Show collection");
