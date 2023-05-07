@@ -6,7 +6,10 @@ name: {type: String},
 description: {type: String},
 category: {type: String},
 image: {type: String},
-rate : {type: Number},
+rating :{ 
+rate: {type: Number},
+count: {type:Number}
+}
 
 } ,
 //todo
