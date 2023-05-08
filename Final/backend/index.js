@@ -2,8 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
 
-const Product = require("./dataSchema.js");
-const Collection = require("./dataSchema.js");
+const { Product, Collection } = require("./dataSchema.js");
 const app = express();
 app.use(express.json());
 app.use(cors());
@@ -74,4 +73,27 @@ app.post("/addToCollection", async (req, res) => {
     console.log("Error while adding a new product:" + err);
   }
 });
+//show from collection
+app.get("/mycollection/collection", async (req, res) => {
+  try {
+    const allItems = await Collection.find({});
+    res.json(allItems);
+  } catch (error) {
+    console.error(error);
+    res.status(500).send("Server Error");
+  }
+});
 //todo delete from collection
+app.delete("/delete", async (req, res) => {
+  console.log("Delete :", req.body);
+  try {
+    const query = { _id: req.body._id };
+    await Collection.deleteOne(query);
+    const messageResponse = {
+      message: `Product deleted`,
+    };
+    res.send(JSON.stringify(messageResponse));
+  } catch (err) {
+    console.log("Error while deleting :" + p_id + " " + err);
+  }
+});

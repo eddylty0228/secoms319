@@ -33,4 +33,4 @@ const CollectionDataSchema = new mongoose.Schema({
     )
 const Collection = mongoose.model('Collection',CollectionDataSchema)
 const Product = mongoose.model('Product', ReactFormDataSchema)
-module.exports = Product,Collection
+module.exports = {Product,Collection}

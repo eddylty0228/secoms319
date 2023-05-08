@@ -11,10 +11,11 @@ import {
   Button,
   Row,
   Image,
+  Modal,
 } from "react-bootstrap";
-import Footer from "./Footer"
-import { toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import Footer from "./Footer";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   const [product, setProduct] = useState([]);
@@ -30,14 +31,10 @@ function App() {
   const [musicProduct, setMusicProduct] = useState([]);
   const [carProduct, setCarProduct] = useState([]);
   const [collectionProduct, setCollectionProduct] = useState([]);
-  const [addToCollectionProduct, setAddToCollectionProduct] = useState({
-    _id: 0,
-    title: "",
-    description: "",
-    category: "",
-    image: "http://127.0.0.1:8080/images/",
-    rate: 0.0,
-  });
+  const [addToCollectionProduct, setAddToCollectionProduct] = useState({});
+  //popup
+  const [showModal, setShowModal] = useState(false);
+
   useEffect(() => {
     getGameProducts();
   }, []);
@@ -57,7 +54,11 @@ function App() {
     getAllProducts();
   }, []);
   const showAllItems = product.map((el, index) => (
-    <Col key={el._id} style={{ margin: "15px" }}>
+    <Col
+      key={el._id}
+      style={{ marginTop: "15px", marginBottom: "15px" }}
+      className="col col-3"
+    >
       <Card style={{ width: "16rem", height: "33rem" }}>
         <Card.Img
           variant="top"
@@ -69,22 +70,29 @@ function App() {
           <Card.Title>{el.name}</Card.Title>
           <Card.Text className="text-end">Catagory: {el.category}</Card.Text>
           <Card.Text className="text-end">Rate: {el.rating.rate}</Card.Text>
-          
         </Card.Body>
         <Card.Footer>
-        <Button variant="primary" className="mt-auto" onClick={()=>handleAddToCollection(el._id)}>ADD TO COLLECTION</Button>
-      </Card.Footer>
+          <Button
+            variant="primary"
+            className="mt-auto"
+            onClick={() => {
+              handleAddToCollection(el._id);
+            }}
+          >
+            ADD TO COLLECTION
+          </Button>
+        </Card.Footer>
       </Card>
     </Col>
   ));
 
-  const itemsPerRow = 4;
-  const rows = [];
-  for (let i = 0; i < showAllItems.length; i += itemsPerRow) {
-    const rowItems = showAllItems.slice(i, i + itemsPerRow);
-    const row = <Row key={`row-${i}`}>{rowItems}</Row>;
-    rows.push(row);
-  }
+  //const itemsPerRow = 4;
+  //const rows = [];
+  //for (let i = 0; i < showAllItems.length; i += itemsPerRow) {
+  //const rowItems = showAllItems.slice(i, i + itemsPerRow);
+  //const row = <Row key={`row-${i}`}>{rowItems}</Row>;
+  //rows.push(row);
+  //}
   // const showOneItem = oneProduct.map((el) => (
   //   <Col key={el._id}>
   //     <Card style={{ width: "16rem" }}>
@@ -110,7 +118,14 @@ function App() {
           <Card.Header className="d-flex justify-content-between align-items-center">
             <Card.Title>{el.name}</Card.Title>
             <div className="ml-auto">
-              <Button variant="primary">+</Button>
+              <Button
+                variant="primary"
+                onClick={() => {
+                  handleAddToCollection(el._id);
+                }}
+              >
+                +
+              </Button>
             </div>
           </Card.Header>
 
@@ -136,7 +151,14 @@ function App() {
           <Card.Header className="d-flex justify-content-between align-items-center">
             <Card.Title>{el.name}</Card.Title>
             <div className="ml-auto">
-              <Button variant="primary">+</Button>
+              <Button
+                variant="primary"
+                onClick={() => {
+                  handleAddToCollection(el._id);
+                }}
+              >
+                +
+              </Button>
             </div>
           </Card.Header>
 
@@ -162,7 +184,14 @@ function App() {
           <Card.Header className="d-flex justify-content-between align-items-center">
             <Card.Title>{el.name}</Card.Title>
             <div className="ml-auto">
-              <Button variant="primary">+</Button>
+              <Button
+                variant="primary"
+                onClick={() => {
+                  handleAddToCollection(el._id);
+                }}
+              >
+                +
+              </Button>
             </div>
           </Card.Header>
 
@@ -188,7 +217,14 @@ function App() {
           <Card.Header className="d-flex justify-content-between align-items-center">
             <Card.Title>{el.name}</Card.Title>
             <div className="ml-auto">
-              <Button variant="primary">+</Button>
+              <Button
+                variant="primary"
+                onClick={() => {
+                  handleAddToCollection(el._id);
+                }}
+              >
+                +
+              </Button>
             </div>
           </Card.Header>
 
@@ -202,7 +238,11 @@ function App() {
     </Row>
   ));
   const showCollection = collectionProduct.map((el) => (
-    <Col key={el._id} style={{ margin: "15px" }}>
+    <Col
+      key={el._id}
+      style={{ marginTop: "15px", marginBottom: "15px" }}
+      className="col col-3"
+    >
       <Card style={{ width: "16rem", height: "33rem" }}>
         <Card.Img
           variant="top"
@@ -214,14 +254,23 @@ function App() {
           <Card.Title>{el.name}</Card.Title>
           <Card.Text className="text-end">Catagory: {el.category}</Card.Text>
           <Card.Text className="text-end">Rate: {el.rating.rate}</Card.Text>
-          
         </Card.Body>
         <Card.Footer>
-        <Button variant="primary" className="mt-auto">DELETE</Button>
-      </Card.Footer>
+          <Button variant="primary" className="mt-auto" onClick={()=>{deleteOneProduct(el._id)}}>
+            Delete
+          </Button>
+        </Card.Footer>
       </Card>
     </Col>
   ));
+
+  //const itemsPerCollectionRow = 4;
+  //const rowsCollection = [];
+  //for (let i = 0; i < showCollection.length; i += itemsPerCollectionRow) {
+  //const collectionrowItems = showCollection.slice(i, i + itemsPerCollectionRow);
+  //const collectionrow = <Row key={`row-${i}`}>{collectionrowItems}</Row>;
+  //rowsCollection.push(collectionrow);
+  //}
   function getAllProducts() {
     fetch("http://localhost:8080/")
       .then((response) => response.json())
@@ -237,39 +286,25 @@ function App() {
     setMusicView(false);
     setCollectionView(false);
   }
-  function getOneProduct(id) {
-    console.log(id);
-    if (id >= 1 && id <= 20) {
-      fetch("http://localhost:8080/" + id)
-        .then((response) => response.json())
-        .then((data) => {
-          console.log("Show one product :", id);
-          console.log(data);
-          setOneProduct(data);
-        });
-    } else {
-      console.log("Wrong number of Product id.");
-    }
-  }
-  function handleAddToCollection(key){
-    getOneProduct(key);
-    console.log("add id: " +key +" to collection")
-    fetch("htto://localhost:8080/addCollection",{
-      method:"POST",
-      headers:{"Content-Type":"application/json"},
-      body: JSON.stringify(oneProduct)
-    })
-    .then((response)=>response.json())
-    .then((data)=>{
-      console.log("Post a new product completed")
-      console.log(data)
-      if(data){
-        const value = Object.values(data);
-        alert(value);
-      }
-    })
-    toast.success('Succesfuly added')
-    setOneProduct()
+
+  function handleAddToCollection(key) {
+    fetch("http://localhost:8080/" + key)
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data);
+        console.log("add id: " + key + " to collection");
+        fetch("http://localhost:8080/addToCollection", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(data),
+        })
+          .then((response) => response.json())
+          .then((data) => {
+            console.log("Post a new product completed");
+            console.log(data);
+          });
+      });
+      setShowModal(true)
   }
   function getGameProducts() {
     fetch("http://localhost:8080/category/games")
@@ -333,7 +368,7 @@ function App() {
     setCollectionView(false);
   }
   function getCollectionProducts() {
-    fetch("http://localhost:8080/category/collection")
+    fetch("http://localhost:8080/mycollection/collection")
       .then((response) => response.json())
       .then((data) => {
         console.log("Show collection");
@@ -346,6 +381,27 @@ function App() {
     setMovieView(false);
     setMusicView(false);
     setCollectionView(true);
+  }
+  //delete by id
+  function deleteOneProduct(deleteid) {
+    console.log("Product to delete :", deleteid);
+    fetch("http://localhost:8080/delete/", {
+      method: "DELETE",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ _id: deleteid }),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log("Delete a product completed : ", deleteid);
+        console.log(data);
+        if (data) {
+          //const keys = Object.keys(data);
+          const value = Object.values(data);
+          alert(value);
+        }
+        getCollectionProducts();
+      });
+      
   }
 
   return (
@@ -416,16 +472,26 @@ function App() {
           <Container>
             <h3 className="subtitle">My Collection</h3>
             <hr></hr>
-            {showCollection}
+            <Row>{showCollection}</Row>
           </Container>
         )}
         {homeView && (
           <Container>
             <h3 className="subtitle">All Items</h3>
             <hr></hr>
-            {rows}
+            <Row>{showAllItems}</Row>
           </Container>
         )}
+      </div>
+      <div>
+        <Modal show={showModal} onHide={() => setShowModal(false)}>
+          <Modal.Header closeButton>
+            <Modal.Title>Added to your collection.</Modal.Title>
+          </Modal.Header>
+          <Modal.Footer>
+            <Button onClick={() => setShowModal(false)}>Close</Button>
+          </Modal.Footer>
+        </Modal>
       </div>
       <div>
         <Footer />
