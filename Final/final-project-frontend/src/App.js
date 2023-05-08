@@ -519,6 +519,7 @@ function App() {
             <p>Date: 2023/5/6</p>
             <p>Name of students and ISU email:</p>
             <p>Tianyi Luo - lty228@iastate.edu</p>
+            <p>Matthew Gudenkauf - mattgude@iastate.edu</p>
               
             <p>
               Professor and email: Dr. Abraham N. Aldaco
