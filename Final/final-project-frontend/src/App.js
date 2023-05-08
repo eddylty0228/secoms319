@@ -22,6 +22,7 @@ function App() {
   const [oneProduct, setOneProduct] = useState({});
   const [homeView, setHomeView] = useState(true);
   const [gameView, setGameView] = useState(false);
+  const [AboutUsView, setAboutUsView] = useState(false);
   const [musicView, setMusicView] = useState(false);
   const [movieView, setMovieView] = useState(false);
   const [carView, setCarView] = useState(false);
@@ -256,7 +257,13 @@ function App() {
           <Card.Text className="text-end">Rate: {el.rating.rate}</Card.Text>
         </Card.Body>
         <Card.Footer>
-          <Button variant="primary" className="mt-auto" onClick={()=>{deleteOneProduct(el._id)}}>
+          <Button
+            variant="primary"
+            className="mt-auto"
+            onClick={() => {
+              deleteOneProduct(el._id);
+            }}
+          >
             Delete
           </Button>
         </Card.Footer>
@@ -285,6 +292,7 @@ function App() {
     setMovieView(false);
     setMusicView(false);
     setCollectionView(false);
+    setAboutUsView(false);
   }
 
   function handleAddToCollection(key) {
@@ -304,7 +312,7 @@ function App() {
             console.log(data);
           });
       });
-      setShowModal(true)
+    setShowModal(true);
   }
   function getGameProducts() {
     fetch("http://localhost:8080/category/games")
@@ -321,6 +329,7 @@ function App() {
     setMovieView(false);
     setMusicView(false);
     setCollectionView(false);
+    setAboutUsView(false);
   }
   function getMovieProducts() {
     fetch("http://localhost:8080/category/movies")
@@ -336,6 +345,7 @@ function App() {
     setMovieView(true);
     setMusicView(false);
     setCollectionView(false);
+    setAboutUsView(false);
   }
   function getMusicProducts() {
     fetch("http://localhost:8080/category/music")
@@ -351,6 +361,7 @@ function App() {
     setMovieView(false);
     setMusicView(true);
     setCollectionView(false);
+    setAboutUsView(false);
   }
   function getCarProducts() {
     fetch("http://localhost:8080/category/cars")
@@ -366,6 +377,7 @@ function App() {
     setMovieView(false);
     setMusicView(false);
     setCollectionView(false);
+    setAboutUsView(false);
   }
   function getCollectionProducts() {
     fetch("http://localhost:8080/mycollection/collection")
@@ -381,6 +393,7 @@ function App() {
     setMovieView(false);
     setMusicView(false);
     setCollectionView(true);
+    setAboutUsView(false);
   }
   //delete by id
   function deleteOneProduct(deleteid) {
@@ -401,7 +414,6 @@ function App() {
         }
         getCollectionProducts();
       });
-      
   }
 
   return (
@@ -434,6 +446,18 @@ function App() {
                 onClick={() => getCollectionProducts()}
               >
                 My Collection
+              </Button>
+              <Button className="nav-link" onClick={() => {
+                setAboutUsView(true);
+                setGameView(false);
+    setHomeView(false);
+    setCarView(false);
+    setMovieView(false);
+    setMusicView(false);
+    setCollectionView(false);
+
+                }}>
+                About Us
               </Button>
             </Nav>
           </Navbar.Collapse>
@@ -480,6 +504,26 @@ function App() {
             <h3 className="subtitle">All Items</h3>
             <hr></hr>
             <Row>{showAllItems}</Row>
+          </Container>
+        )}
+        {AboutUsView && (
+          <Container>
+            <header>
+              <title>
+              SE/ComS319 Construction of User Interfaces, Spring 2023
+            </title>
+            </header>
+            
+
+            <h1>SE/ComS319 Construction of User Interfaces, Spring 2023</h1>
+            <p>Date: 2023/5/6</p>
+            <p>Name of students and ISU email:</p>
+            <p>Tianyi Luo - lty228@iastate.edu</p>
+              
+            <p>
+              Professor and email: Dr. Abraham N. Aldaco
+              Gastelum - aaldaco@iastate.edu
+            </p>
           </Container>
         )}
       </div>

@@ -1,0 +1,188 @@
+[{
+  "_id": 1,
+  "id": 1,
+  "name": "League of Legends",
+  "description": "League of Legends (LoL), commonly referred to as League, is a 2009 multiplayer online battle arena video game developed and published by Riot Games. Inspired by Defense of the Ancients, a custom map for Warcraft III, Riot's founders sought to develop a stand-alone game in the same genre. Since its release in October 2009, League has been free-to-play and is monetized through purchasable character customization. The game is available for Microsoft Windows and macOS. In the game, two teams of five players battle in player-versus-player combat, each team occupying and defending their half of the map. Each of the ten players controls a character, known as a \"champion\", with unique abilities and differing styles of play. During a match, champions become more powerful by collecting experience points, earning gold, and purchasing items to defeat the opposing team. In League's main mode, Summoner's Rift, a team wins by pushing through to the enemy base and destroying their \"Nexus\", a large structure located within. League of Legends has received generally positive reviews; critics highlighted its accessibility, character designs, and production value. The game's long lifespan has resulted in a critical reappraisal, with reviews trending positively; the negative and abusive in-game behavior of its players, criticized since early in the game's lifetime, persists despite Riot's attempts to fix the problem. In 2019, League regularly peaked at eight million concurrent players, and its popularity has led to tie-ins such as music videos, comic books, short stories, and the animated series Arcane. Its success has also spawned several spin-off video games, including a mobile version, a digital collectible card game and a turn-based role-playing game, among others. A massively multiplayer online role-playing game based on the property is in development.",
+  "category": "games",
+  "image": "http://127.0.0.1:8080/images/League%20of%20Legends.jpg",
+  "rating": {
+    "rate": 4.1,
+    "count": 259
+  }
+},{
+  "_id": 2,
+  "id": 2,
+  "name": "Counter Strike Global Offensive",
+  "description": "Counter-Strike: Global Offensive (CS:GO) is a first-person shooter video game developed by Valve Corporation and Hidden Path Entertainment. It is the fourth game in the Counter-Strike series and was released in August 2012 for Windows, macOS, Xbox 360, and PlayStation 3. The game features two teams, the Terrorists and the Counter-Terrorists, each with their own objectives. The Terrorists must plant a bomb or hold hostages, while the Counter-Terrorists must defuse the bomb or rescue the hostages. The game also features a variety of weapons and equipment, which can be purchased at the start of each round using in-game currency earned from kills and objectives. CS:GO has a competitive esports scene with tournaments and leagues around the world. The game has also been updated over the years with new maps, weapons, and game modes. It is played by millions of players worldwide and has been praised for its tactical gameplay and skill-based mechanics. However, the game has also been criticized for its toxic player base and for the presence of cheaters and hackers. Valve has taken steps to address these issues by implementing anti-cheat measures and introducing systems to report and punish toxic behavior.",
+  "category": "games",
+  "image": "http://127.0.0.1:8080/images/CSGO.jpg",
+  "rating": {
+    "rate": 4.2,
+    "count": 25
+  }
+},{
+  "_id": 3,
+  "id": 3,
+  "name": "Super Smash Bros Ultimate",
+  "description": "Super Smash Bros. Ultimate is a 2018 crossover fighting game developed by Bandai Namco Studios and Sora Ltd. and published by Nintendo for the Nintendo Switch. It is the fifth installment in the Super Smash Bros. series, succeeding Super Smash Bros. for Nintendo 3DS and Wii U (2014). The game follows the series' traditional style of gameplay: controlling one of the various characters, players must use differing attacks to weaken their opponents and knock them out of an arena. It features a wide variety of game modes, including a campaign for single-player and multiplayer versus modes. Ultimate features 89 playable fighters, including all characters from previous Super Smash Bros. games alongside newcomers. The roster ranges from Nintendo mascots to characters from third-party franchises. Planning for the game had begun by December 2015, with full development starting after the completion of 3DS/Wii U's downloadable content (DLC). Series creator and director Masahiro Sakurai returned along with Bandai Namco Studios and Sora, the studios that developed 3DS/Wii U, with the return of the studios speeding up the preparation process. Sakurai's goal with Ultimate was to include every character from previous games in the series despite the various development and licensing challenges this would present. Several well-known video game musicians contributed to the soundtrack, with Hideki Sakamoto writing the main theme \"Lifelight\". Nintendo first teased Ultimate in a Nintendo Direct in March 2018 and fully revealed it at E3 2018 the following June. It later received two additional Directs before it was released on December 7, 2018. The game received universal acclaim, with some critics calling it the best of the series. They praised its amount of content and fine-tuning of existing Smash gameplay elements, although its online mode received criticism. Ultimate is the best-selling fighting game of all time, having sold over 30 million copies as of December 2022, and is a popular competitive fighting game. The game received downloadable content adding new fighters, stages, and other content from its release until October 2021.",
+  "category": "games",
+  "image": "http://127.0.0.1:8080/images/Switch_SuperSmashBrosUltimate.jpg",
+  "rating": {
+    "rate": 4.1,
+    "count": 250
+  }
+},{
+  "_id": 4,
+  "id": 4,
+  "name": "Genshin-Impact",
+  "description": "Genshin Impact is an action role-playing game developed and published by miHoYo, a Chinese video game company. The game was released in September 2020 for Windows, PlayStation 4, PlayStation 5, iOS, and Android, with a Nintendo Switch version planned for release in the future. The game is set in the fantasy world of Teyvat, where players take on the role of a character known as the Traveler, who is searching for their lost sibling. The game features an open-world environment with a variety of landscapes, such as mountains, forests, and rivers. Players can explore the world, complete quests, and battle enemies with a party of up to four characters. Genshin Impact's combat system is based on elemental magic, where characters can use different elemental powers to create combos and deal damage to enemies. The game also features a gacha system, where players can use in-game currency or real money to obtain new characters and weapons. The game has received positive reviews for its graphics, gameplay, and storyline, as well as for its soundtrack, which was composed by multiple award-winning composers. Genshin Impact has also been praised for its cross-platform play, which allows players on different devices to play together. However, the game has also been criticized for its monetization practices and the need to spend money to obtain the best characters and equipment. Despite this, Genshin Impact has become a popular game with millions of players around the world, and miHoYo has continued to release new content and updates to keep the game fresh and engaging.",
+  "category": "games",
+  "image": "http://127.0.0.1:8080/images/Genshin-Impact.jpg",
+  "rating": {
+    "rate": 3.5,
+    "count": 156
+  }
+},{
+  "_id": 5,
+  "id": 5,
+  "name": "Hades",
+  "description": "Hades is an action role-playing video game developed and published by Supergiant Games. The game was released in September 2020 for Windows, macOS, and Nintendo Switch, with later releases for PlayStation 4, PlayStation 5, Xbox One, and Xbox Series X/S. The game is set in the underworld of Greek mythology, where players take on the role of the god of the dead, Hades' son Zagreus, as he attempts to escape from the underworld and reach Mount Olympus. The game features a mix of hack-and-slash combat and dungeon-crawling gameplay, where players must battle their way through procedurally generated levels filled with monsters and bosses. Hades features a unique \"roguelike\" game design, where death is not the end of the game, but rather a means of progression. Each time the player dies, they are sent back to the start of the game, but with new abilities and upgrades to make their next attempt easier. The game also features a deep narrative with multiple storylines and characters, all of whom are fully voice-acted. Hades has received widespread critical acclaim for its fast-paced gameplay, beautiful art style, and compelling narrative. The game has been praised for its unique take on the roguelike genre, as well as its accessibility and replayability. Hades has won numerous awards, including the prestigious Game of the Year award at The Game Awards 2020. Hades is considered to be one of the best indie games of 2020, and has earned a dedicated fanbase for its engaging gameplay, unique storytelling, and high replayability.",
+  "category": "games",
+  "image": "http://127.0.0.1:8080/images/Hades.jpg",
+  "rating": {
+    "rate": 4.6,
+    "count": 76
+  }
+},{
+  "_id": 6,
+  "id": 6,
+  "name": "BMW",
+  "description": "The special fascination of the BMW Group not only lies in its products and technology, but also in the company’s history, written by inventors, pioneers and brilliant designers. Today, the BMW Group, with more than 30 production and assembly facilities as well as a global sales network, is the world’s leading manufacturer of premium automobiles and motorcycles, and provider of premium financial and mobility services.",
+  "category": "cars",
+  "image": "http://127.0.0.1:8080/images/bmw.png",
+  "rating": {
+    "rate": 4.8,
+    "count": 56
+  }
+},{
+  "_id": 7,
+  "id": 7,
+  "name": "Tesla",
+  "description": "Tesla designs and manufactures electric vehicles (electric cars and trucks), battery energy storage from home to grid-scale, solar panels and solar roof tiles, and related products and services. Tesla is one of the world's most valuable companies and is, as of 2023, the world's most valuable automaker.",
+  "category": "cars",
+  "image": "http://127.0.0.1:8080/images/tesla.png",
+  "rating": {
+    "rate": 4.1,
+    "count": 124
+  }
+},{
+  "_id": 8,
+  "id": 8,
+  "name": "Ferrari",
+  "description": "Ferrari NV is a holding company. It manufactures luxury sports cars. The firm's models include the F12Berlinetta, 488GTB, 488 Spider, 458 Speciale, California T, the LaFerrari Hybrid, LaFerrari and the FF four-wheel drive. It participates in car racing such as Formula One.",
+  "category": "cars",
+  "image": "http://127.0.0.1:8080/images/ferrari.png",
+  "rating": {
+    "rate": 4.2,
+    "count": 259
+  }
+},{
+  "_id": 9,
+  "id": 9,
+  "name": "Jeep",
+  "description": "Jeep is an American automobile marque, now owned by multi-national corporation Stellantis. Jeep has been part of Chrysler since 1987, when Chrysler acquired the Jeep brand, along with remaining assets, from its previous owner American Motors Corporation (AMC).",
+  "category": "cars",
+  "image": "http://127.0.0.1:8080/images/jeep2.png",
+  "rating": {
+    "rate": 4.1,
+    "count": 259
+  }
+},{
+  "_id": 10,
+  "id": 10,
+  "name": "Morgan Wallen",
+  "description": "Country singer Morgan Cole Wallen, born on May 13, 1993, has become a sensation in the country music scene since the debut of his first album. A former contestant on the reality television show “The Voice,” Wallen went on to strike a deal with an independent music label to launch his first E.P. in 2015 and has not looked back since. With the release of his first record, Wallen went on to win multiple awards and continues to create headlines for his achievements.",
+  "category": "music",
+  "image": "http://127.0.0.1:8080/images/morganwallen.jpeg",
+  "rating": {
+    "rate": 3.6,
+    "count": 259
+  }
+},{
+  "_id": 11,
+  "id": 11,
+  "name": "Drake",
+  "description": "Drake, original name Aubrey Drake Graham, (born October 24, 1986, Toronto, Ontario, Canada), Canadian rap musician who first gained fame as an actor on the acclaimed TV teenage drama series Degrassi: The Next Generation and went on to a successful and influential music career. His trademark mixture of singing and lyrical rapping and of braggadocio juxtaposed with raw vulnerability won him a large following.",
+  "category": "music",
+  "image": "http://127.0.0.1:8080/images/drake.webp",
+  "rating": {
+    "rate": 4.6,
+    "count": 250
+  }
+},{
+  "_id": 12,
+  "id": 12,
+  "name": "The Weeknd",
+  "description": "The Weeknd, byname of Abel Makkonen Tesfaye, (born February 16, 1990, Toronto, Ontario, Canada), Canadian rhythm-and-blues singer and songwriter who was perhaps best known for his explicit songs about sex and drugs, many of which were autobiographical, and for his soaring falsetto and its singular tremolo.",
+  "category": "music",
+  "image": "http://127.0.0.1:8080/images/theweekend.jpeg",
+  "rating": {
+    "rate": 4.1,
+    "count": 25
+  }
+},{
+  "_id": 13,
+  "id": 13,
+  "name": "George Strait",
+  "description": "Country singer George Strait began performing in a band while serving in the U.S. Army. He landed a recording contract in the 1980s with MCA records and produced numerous hit albums throughout the next three decades. Known for staying true to traditional country sound, he has won multiple awards and has the biggest-selling boxed set in country music history.",
+  "category": "music",
+  "image": "http://127.0.0.1:8080/images/georgestrait.jpeg",
+  "rating": {
+    "rate": 3.1,
+    "count": 359
+  }
+},{
+  "_id": 14,
+  "id": 14,
+  "name": "Avatar",
+  "description": "When his brother is killed in a robbery, paraplegic Marine Jake Sully decides to take his place in a mission on the distant world of Pandora. There he learns of greedy corporate figurehead Parker Selfridge's intentions of driving off the native humanoid \"Na'vi\" in order to mine for the precious material scattered throughout their rich woodland. In exchange for the spinal surgery that will fix his legs, Jake gathers knowledge, of the Indigenous Race and their Culture, for the cooperating military unit spearheaded by gung-ho Colonel Quaritch, while simultaneously attempting to infiltrate the Na'vi people with the use of an \"avatar\" identity. While Jake begins to bond with the native tribe and quickly falls in love with the beautiful alien Neytiri, the restless Colonel moves forward with his ruthless extermination tactics, forcing the soldier to take a stand - and fight back in an epic battle for the fate of Pandora.",
+  "category": "movie",
+  "image": "http://127.0.0.1:8080/images/avartar.jpg",
+  "rating": {
+    "rate": 4.4,
+    "count": 259
+  }
+},{
+  "_id": 15,
+  "id": 15,
+  "name": "Avenger",
+  "description": "Loki, the adopted brother of Thor, teams-up with the Chitauri Army and uses the Tesseract's power to travel from Asgard to Midgard to plot the invasion of Earth and become a king. The director of the agency S.H.I.E.L.D., Nick Fury, sets in motion project Avengers, joining Tony Stark a.k.a. the Iron Man; Steve Rogers, a.k.a. Captain America; Bruce Banner, a.k.a. The Hulk; Thor; Natasha Romanoff, a.k.a. Black Widow; and Clint Barton, a.k.a. Hawkeye, to save the world from the powerful Loki and the alien invasion.",
+  "category": "movie",
+  "image": "http://127.0.0.1:8080/images/avengers.jpg",
+  "rating": {
+    "rate": 4,
+    "count": 259
+  }
+},{
+  "_id": 16,
+  "id": 16,
+  "name": "Fast And Furious",
+  "description": "Dominic Toretto (Vin Diesel) enjoys the adrenaline of street car racing and his fans treat him like a rock star. After a blazing encounter with the ruthless Johnny Tran, Dom decides to take Brian (Paul Walker), a newcomer to street racing, under his wing. Dom's sister Mia sees something she likes in Brian, too. Trouble is, neither of them realize he's an undercover cop, and Dominic and his rival Johnny Tran are both the prime suspects in a case involving dirty money and big-rig hijacking.",
+  "category": "movie",
+  "image": "http://127.0.0.1:8080/images/Fast And Furious.jpg",
+  "rating": {
+    "rate": 3.1,
+    "count": 59
+  }
+},{
+  "_id": 17,
+  "id": 17,
+  "name": "Mission Impossible",
+  "description": "When U.S. government operative Ethan Hunt (Tom Cruise) and his mentor, Jim Phelps (Jon Voight), go on a covert assignment that takes a disastrous turn, Jim is killed, and Ethan becomes the prime murder suspect. Now a fugitive, Hunt recruits brilliant hacker Luther Stickell (Ving Rhames) and maverick pilot Franz Krieger (Jean Reno) to help him sneak into a heavily guarded CIA building to retrieve a confidential computer file that will prove his innocence.",
+  "category": "movie",
+  "image": "http://127.0.0.1:8080/images/Mission Impossible.jpg",
+  "rating": {
+    "rate": 4.5,
+    "count": 259
+  }
+}]
